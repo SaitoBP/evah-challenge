@@ -1,20 +1,29 @@
 import React from 'react'
 
+import { useForm } from 'react-hook-form'
+
 import Typography from '../../components/Typography/Typography'
 import TextField from '../../components/TextField/TextField'
 import Button from '../../components/Button/Button'
 
 const Login = () => {
+  const { register, handleSubmit } = useForm()
+
+  const onSubmit = data => {
+    /* Fetch from API*/
+    console.log(data)
+  }
+
   return (
     <section>
       <Typography variant='h1'>Olá, seja bem-vindo!</Typography>
 
       <Typography variant='h3'>Para acessar a plataforma, faça seu login.</Typography>
 
-      <form>
-        <TextField label='email' type='email' />
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <TextField register={{ ...register('email') }} label='email' type='email' />
 
-        <TextField label='senha' type='password' />
+        <TextField register={{ ...register('password') }} label='senha' type='password' />
 
         <Button type='submit'>Entrar</Button>
       </form>
