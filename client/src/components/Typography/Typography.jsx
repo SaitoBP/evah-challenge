@@ -2,9 +2,7 @@ import { createElement } from 'react'
 
 import PropTypes from 'prop-types'
 
-const Typography = props => {
-  const { children, variant } = props
-
+const Typography = ({ children, variant }) => {
   return createElement(variant, {}, children)
 }
 

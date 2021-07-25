@@ -2,9 +2,7 @@ import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
-const TextField = props => {
-  const { label, type } = props
-
+const TextField = ({ label, type }) => {
   return (
     <Fragment>
       <label>{label}</label>
