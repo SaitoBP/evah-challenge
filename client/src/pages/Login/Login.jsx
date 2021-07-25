@@ -2,6 +2,7 @@ import React from 'react'
 
 import Typography from '../../components/Typography/Typography'
 import TextField from '../../components/TextField/TextField'
+import Button from '../../components/Button/Button'
 
 const Login = () => {
   return (
@@ -15,7 +16,7 @@ const Login = () => {
 
         <TextField label='senha' type='password' />
 
-        <button type='submit'>Entrar</button>
+        <Button type='submit'>Entrar</Button>
       </form>
 
       <Typography variant='p'>
