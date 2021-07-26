@@ -6,13 +6,12 @@ import Typography from '../../components/Typography/Typography'
 import TextField from '../../components/TextField/TextField'
 import Button from '../../components/Button/Button'
 
+import useSubmit from './useSubmit'
+
 const Login = () => {
   const { register, handleSubmit } = useForm()
 
-  const onSubmit = data => {
-    /* Fetch from API*/
-    console.log(data)
-  }
+  const { onSubmit } = useSubmit()
 
   return (
     <section>
