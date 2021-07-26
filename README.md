@@ -7,4 +7,5 @@ Uma aplicação fullstack simples feita como candidatura de vaga na [Evah](https
 Para poder "logar" na aplicação, foi criado um usuario fake diretamente no backend, apenas para questão de demonstração
 
 **email**: gabriel@mail.com
+
 **senha**: admin
